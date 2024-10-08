@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App meteo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<div class="container">
+    <header>
+        <h1>app meteo</h1>
+        <p>Scopri le condizioni meteo del tuo comune</p>
+    </header>
+    <div class="search-container">
+        <label for="searchComune">Cerca un comune:</label>
+        <input type="text" id="searchComune" placeholder="Digita il nome del comune..." onkeyup="filterComuni()">
+    </div>
+
+    <div class="form-container">
+        <label for="mySelect">Seleziona un comune:</label>
+        <select id="mySelect" onchange="fetchWeatherData()">
+            <option value="">Seleziona un comune...</option>
+        </select>
+    </div>
+
+    <div class="geo-info">
+        <h2>POSIZIONE GEOGRAFICA</h2>
+        <p>Longitudine: <span id="lon"></span></p>
+        <p>Latitudine: <span id="lat"></span></p>
+    </div>
+
+    <div id="weatherInfo" class="weather-info">
+        <h2>Condizioni Meteo</h2>
+        <p>Descrizione: <span id="description"></span></p>
+        <p>Temperatura: <span id="temperature"></span> °C</p>
+    </div>
+</div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+/* Reset di base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+    color: #343a40;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+.form-container {
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #4a90e2;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007bff;
+    background-color: #e9ecef;
+}
+
+.geo-info, .weather-info {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #f1f3f5;
+}
+
+.weather-info {
+    display: none; /* Nascondo il div fino a quando non ci sono dati */
+}
+
+.weather-info h2 {
+    margin-bottom: 10px;
+}
+
+.weather-info p {
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+}
+/* Stile per il campo di ricerca */
+.search-container {
+    margin-bottom: 20px;
+}
+
+#searchComune {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #4a90e2;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    font-size: 16px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+#searchComune:focus {
+    outline: none;
+    border-color: #007bff;
+}
