@@ -56,7 +56,7 @@ function fetchWeatherData() {
             document.getElementById('lat').textContent = lat;
 
             // Eseguo una chiamata all'API OpenWeather per ottenere le condizioni meteo
-            const apiKey = '5f578038b84d9a8cf214d8cf92613764&lang=it'; // Inserisci qui la tua chiave API
+            const apiKey = '5f578038b84d9a8cf214d8cf92613764&lang=it';
             const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
 
             fetch(url)
